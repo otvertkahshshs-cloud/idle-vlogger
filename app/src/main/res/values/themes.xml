@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.IdleVlogger" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#e94560</item>
+        <item name="colorPrimaryVariant">#0f3460</item>
+        <item name="colorOnPrimary">#ffffff</item>
+        <item name="colorSecondary">#4ecca3</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="android:statusBarColor">#0f3460</item>
+    </style>
+</resources>

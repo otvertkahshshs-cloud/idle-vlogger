@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#16213e"
+    android:padding="12dp"
+    android:layout_marginBottom="6dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvUpgradeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Камера"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/tvUpgradeDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Описание"
+            android:textSize="13sp"
+            android:textColor="#aaaaaa"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvUpgradeLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Уровень 1"
+            android:textSize="12sp"
+            android:textColor="#4ecca3"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvUpgradeCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💰 100"
+            android:textSize="13sp"
+            android:textColor="#f5a623"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Купить"
+        android:textColor="#ffffff"
+        android:backgroundTint="#e94560"
+        android:stateListAnimator="@null"/>
+
+</LinearLayout>
