@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -21,9 +22,6 @@ class ShopActivity : AppCompatActivity() {
         binding = ActivityShopBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        title = "Магазин улучшений"
-
         adapter = UpgradeAdapter(GameManager.upgrades) { upgradeId ->
             if (GameManager.buyUpgrade(upgradeId)) {
                 adapter.notifyDataSetChanged()
@@ -34,11 +32,6 @@ class ShopActivity : AppCompatActivity() {
         binding.rvUpgrades.layoutManager = LinearLayoutManager(this)
         binding.rvUpgrades.adapter = adapter
         updateMoneyHeader()
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        finish()
-        return true
     }
 
     private fun updateMoneyHeader() {
@@ -57,6 +50,7 @@ class UpgradeAdapter(
         val tvLevel: TextView = view.findViewById(R.id.tvUpgradeLevel)
         val tvCost: TextView = view.findViewById(R.id.tvUpgradeCost)
         val btnBuy: Button = view.findViewById(R.id.btnBuy)
+        val pbUpgrade: ProgressBar = view.findViewById(R.id.pbUpgrade)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
@@ -76,8 +70,10 @@ class UpgradeAdapter(
         holder.tvLevel.text = "Уровень $level"
         holder.tvCost.text = "💰 ${GameManager.formatNumber(cost)}"
         holder.btnBuy.isEnabled = canAfford
-        holder.btnBuy.text = if (canAfford) "Купить" else "Мало денег"
+        holder.btnBuy.text = if (canAfford) "Купить" else "Мало"
         holder.btnBuy.setOnClickListener { onBuy(upgrade.id) }
+        // Progress bar: show level progress up to 10, then cap
+        holder.pbUpgrade.progress = ((level % 10) * 10).coerceIn(0, 100)
     }
 
     override fun getItemCount() = upgrades.size

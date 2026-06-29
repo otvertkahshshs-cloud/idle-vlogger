@@ -1,3 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Idle Vlogger</string>
+    <string name="btn_record">📹\nСНЯТЬ\nВИДЕО</string>
+    <string name="shop_title">Магазин улучшений</string>
+    <string name="btn_buy">Купить</string>
+    <string name="btn_cant_buy">Мало денег</string>
+    <string name="level_prefix">Уровень</string>
+    <string name="no_auto_income">Нет авто-дохода</string>
 </resources>

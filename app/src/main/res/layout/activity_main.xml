@@ -1,119 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#1a1a2e"
-    android:padding="16dp">
+    android:background="@drawable/bg_gradient">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="🎥 Idle Vlogger"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="#e94560"
-        android:gravity="center"
-        android:paddingTop="16dp"
-        android:paddingBottom="8dp"/>
-
-    <!-- Stats card -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#16213e"
-        android:padding="16dp"
-        android:layout_marginTop="8dp">
+        android:padding="16dp">
 
+        <!-- Title -->
         <TextView
-            android:id="@+id/tvMoney"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="💰 0"
+            android:text="🎥 IDLE VLOGGER"
             android:textSize="26sp"
-            android:textColor="#f5a623"
             android:textStyle="bold"
-            android:gravity="center"/>
+            android:textColor="@color/accent_red"
+            android:gravity="center"
+            android:letterSpacing="0.08"
+            android:paddingTop="16dp"
+            android:paddingBottom="12dp"/>
 
-        <TextView
-            android:id="@+id/tvSubscribers"
+        <!-- Stats card -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="👥 0"
-            android:textSize="20sp"
-            android:textColor="#4ecca3"
-            android:gravity="center"
-            android:layout_marginTop="4dp"/>
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="16dp">
 
-        <TextView
-            android:id="@+id/tvVideos"
+            <TextView
+                android:id="@+id/tvMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💰 0"
+                android:textSize="28sp"
+                android:textColor="@color/accent_gold"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tvSubscribers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="👥 0"
+                    android:textSize="16sp"
+                    android:textColor="@color/accent_teal"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tvVideos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🎬 0 видео"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_gray"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tvPerClick"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+10 за видео"
+                    android:textColor="@color/accent_teal"
+                    android:textSize="13sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tvPerSec"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Нет авто-дохода"
+                    android:textColor="@color/text_gray"
+                    android:textSize="13sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Record button area - takes remaining space -->
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="🎬 Видео: 0"
-            android:textSize="16sp"
-            android:textColor="#aaaaaa"
-            android:gravity="center"
-            android:layout_marginTop="4dp"/>
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!-- Floating money text (hidden by default) -->
+            <TextView
+                android:id="@+id/tvFloatMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent_gold"
+                android:visibility="gone"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="4"/>
+
+            <!-- Big record button -->
+            <Button
+                android:id="@+id/btnRecord"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:text="📹&#10;СНЯТЬ&#10;ВИДЕО"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:background="@drawable/btn_record"
+                android:stateListAnimator="@null"
+                android:elevation="8dp"/>
+        </FrameLayout>
+
+        <!-- Shop button -->
+        <Button
+            android:id="@+id/btnShop"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🛒  МАГАЗИН УЛУЧШЕНИЙ"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:background="@drawable/btn_shop"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="8dp"
+            android:elevation="4dp"/>
+
     </LinearLayout>
 
-    <!-- Income info -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="8dp">
-
-        <TextView
-            android:id="@+id/tvPerClick"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="+10 за видео"
-            android:textColor="#4ecca3"
-            android:textSize="14sp"
-            android:gravity="center"/>
-
-        <TextView
-            android:id="@+id/tvPerSec"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Нет авто-дохода"
-            android:textColor="#aaaaaa"
-            android:textSize="14sp"
-            android:gravity="center"/>
-    </LinearLayout>
-
-    <!-- Big record button -->
-    <Button
-        android:id="@+id/btnRecord"
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="24dp"
-        android:text="📹\nСНЯТЬ\nВИДЕО"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:backgroundTint="#e94560"
-        android:stateListAnimator="@null"/>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
-
-    <!-- Shop button -->
-    <Button
-        android:id="@+id/btnShop"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:text="🛒  Магазин улучшений"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:backgroundTint="#0f3460"
-        android:layout_marginBottom="8dp"/>
-
-</LinearLayout>
+</FrameLayout>

@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="ic_launcher_background">#e94560</color>
+    <color name="bg_dark">#0d0d1a</color>
+    <color name="bg_card">#1a1a35</color>
+    <color name="bg_card2">#12122a</color>
+    <color name="accent_red">#e94560</color>
+    <color name="accent_teal">#4ecca3</color>
+    <color name="accent_gold">#f5a623</color>
+    <color name="accent_purple">#7c4dff</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_gray">#8899aa</color>
+    <color name="btn_shop">#0f3460</color>
 </resources>
