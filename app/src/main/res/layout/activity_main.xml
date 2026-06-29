@@ -96,11 +96,19 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Record button area - takes remaining space -->
+        <!-- Scene + record button area -->
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
+
+            <!-- Background game scene -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_scene"
+                android:scaleType="fitXY"
+                android:contentDescription="@null"/>
 
             <!-- Floating money text (hidden by default) -->
             <TextView
@@ -120,11 +128,12 @@
             <!-- Big record button -->
             <Button
                 android:id="@+id/btnRecord"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="16dp"
                 android:text="📹&#10;СНЯТЬ&#10;ВИДЕО"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_white"
                 android:background="@drawable/btn_record"

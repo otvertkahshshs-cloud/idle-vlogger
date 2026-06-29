@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="320dp"
+    android:viewportWidth="360"
+    android:viewportHeight="320">
+
+    <!-- Sky background -->
+    <path android:pathData="M0,0 L360,0 L360,220 L0,220 Z" android:fillColor="#6ab4d8"/>
+
+    <!-- Snow clouds -->
+    <path android:pathData="M30,40 Q45,28 60,40 Q70,30 85,40 Q90,50 75,55 Q80,65 60,65 Q40,65 30,58 Q15,55 30,40 Z" android:fillColor="#e8f4fb"/>
+    <path android:pathData="M240,25 Q258,12 275,25 Q288,15 305,25 Q312,38 296,43 Q302,55 275,55 Q248,55 240,45 Q224,40 240,25 Z" android:fillColor="#ddeefa"/>
+
+    <!-- Snow ground -->
+    <path android:pathData="M0,200 Q90,185 180,195 Q270,205 360,190 L360,320 L0,320 Z" android:fillColor="#ddeefa"/>
+    <path android:pathData="M0,210 Q90,198 180,206 Q270,214 360,200 L360,320 L0,320 Z" android:fillColor="#eaf4fb"/>
+
+    <!-- === HOUSE === -->
+    <!-- House body -->
+    <path android:pathData="M175,100 L285,100 L285,200 L175,200 Z" android:fillColor="#8b4f6b"/>
+    <!-- Roof -->
+    <path android:pathData="M165,105 L230,55 L295,105 Z" android:fillColor="#5a2e44"/>
+    <!-- Snow on roof -->
+    <path android:pathData="M168,105 Q195,88 230,78 Q265,88 292,105 Q265,98 230,90 Q195,98 168,105 Z" android:fillColor="#eaf4fb"/>
+    <!-- Door -->
+    <path android:pathData="M216,160 L244,160 L244,200 L216,200 Z" android:fillColor="#3a1a2a"/>
+    <path android:pathData="M216,160 Q230,150 244,160 Z" android:fillColor="#3a1a2a"/>
+    <!-- Window left -->
+    <path android:pathData="M185,115 L210,115 L210,140 L185,140 Z" android:fillColor="#a8d8ea" android:strokeColor="#5a2e44" android:strokeWidth="2"/>
+    <path android:pathData="M197,115 L197,140 M185,127 L210,127" android:strokeColor="#5a2e44" android:strokeWidth="1.5" android:fillColor="#00000000"/>
+    <!-- Window right -->
+    <path android:pathData="M250,115 L275,115 L275,140 L250,140 Z" android:fillColor="#a8d8ea" android:strokeColor="#5a2e44" android:strokeWidth="2"/>
+    <path android:pathData="M262,115 L262,140 M250,127 L275,127" android:strokeColor="#5a2e44" android:strokeWidth="1.5" android:fillColor="#00000000"/>
+    <!-- Chimney -->
+    <path android:pathData="M252,55 L265,55 L265,75 L252,75 Z" android:fillColor="#5a2e44"/>
+    <path android:pathData="M248,50 L269,50 L269,57 L248,57 Z" android:fillColor="#3a1a2a"/>
+
+    <!-- === CAR (red pickup) === -->
+    <!-- Car body lower -->
+    <path android:pathData="M80,175 L185,175 L185,198 L80,198 Z" android:fillColor="#cc2200"/>
+    <!-- Car body upper cab -->
+    <path android:pathData="M95,155 L175,155 L180,175 L85,175 Z" android:fillColor="#dd3311"/>
+    <!-- Car roof -->
+    <path android:pathData="M100,158 L170,158 L175,155 L95,155 Z" android:fillColor="#bb1100"/>
+    <!-- Windshield -->
+    <path android:pathData="M105,157 L165,157 L170,174 L100,174 Z" android:fillColor="#99ccdd" android:strokeColor="#771100" android:strokeWidth="1"/>
+    <!-- Wheels -->
+    <path android:pathData="M100,198 m-15,0 a15,15 0 1,0 30,0 a15,15 0 1,0 -30,0 Z" android:fillColor="#222222"/>
+    <path android:pathData="M100,198 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 Z" android:fillColor="#888888"/>
+    <path android:pathData="M165,198 m-15,0 a15,15 0 1,0 30,0 a15,15 0 1,0 -30,0 Z" android:fillColor="#222222"/>
+    <path android:pathData="M165,198 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 Z" android:fillColor="#888888"/>
+    <!-- Snow on car -->
+    <path android:pathData="M85,175 Q135,168 180,175 Q155,172 135,170 Q115,172 85,175 Z" android:fillColor="#eaf4fb"/>
+
+    <!-- === SNOWMAN === -->
+    <!-- Body -->
+    <path android:pathData="M318,195 m-16,0 a16,16 0 1,0 32,0 a16,16 0 1,0 -32,0 Z" android:fillColor="#eaf4fb"/>
+    <!-- Head -->
+    <path android:pathData="M318,173 m-11,0 a11,11 0 1,0 22,0 a11,11 0 1,0 -22,0 Z" android:fillColor="#eaf4fb"/>
+    <!-- Eyes -->
+    <path android:pathData="M314,170 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0 Z" android:fillColor="#333333"/>
+    <path android:pathData="M322,170 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0 Z" android:fillColor="#333333"/>
+    <!-- Carrot nose -->
+    <path android:pathData="M316,173 L322,174 L316,175 Z" android:fillColor="#e87820"/>
+    <!-- Buttons -->
+    <path android:pathData="M318,184 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0 Z" android:fillColor="#555555"/>
+    <path android:pathData="M318,190 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0 Z" android:fillColor="#555555"/>
+    <path android:pathData="M318,197 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0 Z" android:fillColor="#555555"/>
+
+    <!-- === BLOGGER CHARACTER === -->
+    <!-- Legs -->
+    <path android:pathData="M45,215 L52,215 L54,240 L43,240 Z" android:fillColor="#d4d800"/>
+    <path android:pathData="M57,215 L64,215 L66,240 L55,240 Z" android:fillColor="#d4d800"/>
+    <!-- Shoes -->
+    <path android:pathData="M41,237 L57,237 L58,243 L40,243 Z" android:fillColor="#ffffff"/>
+    <path android:pathData="M53,237 L69,237 L70,243 L52,243 Z" android:fillColor="#ffffff"/>
+    <!-- Body (yellow hoodie) -->
+    <path android:pathData="M35,165 L75,165 L78,218 L32,218 Z" android:fillColor="#d4d800"/>
+    <!-- Hoodie pocket -->
+    <path android:pathData="M48,190 L62,190 L62,205 L48,205 Z" android:fillColor="#b8bc00" android:strokeColor="#b8bc00" android:strokeWidth="1"/>
+    <!-- Zipper line -->
+    <path android:pathData="M55,167 L55,215" android:strokeColor="#b8bc00" android:strokeWidth="1.5" android:fillColor="#00000000"/>
+    <!-- Left arm (holding camera) -->
+    <path android:pathData="M35,168 L20,185 L18,205 L28,207 L30,188 L40,172 Z" android:fillColor="#d4d800"/>
+    <!-- Right arm -->
+    <path android:pathData="M75,168 L88,182 L88,200 L78,200 L78,185 L70,172 Z" android:fillColor="#d4d800"/>
+    <!-- Gloves -->
+    <path android:pathData="M14,203 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 Z" android:fillColor="#7b2d8b"/>
+    <path android:pathData="M84,198 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 Z" android:fillColor="#7b2d8b"/>
+    <!-- Camera in left hand -->
+    <path android:pathData="M4,198 L20,198 L20,212 L4,212 Z" android:fillColor="#222222"/>
+    <path android:pathData="M20,202 L26,205 L20,208 Z" android:fillColor="#333333"/>
+    <path android:pathData="M9,202 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 Z" android:fillColor="#445566"/>
+    <!-- Head (animal mask - bunny-like) -->
+    <path android:pathData="M36,135 Q35,120 55,115 Q75,110 78,130 Q82,148 65,155 Q48,158 38,148 Z" android:fillColor="#e8b4d0"/>
+    <!-- Mask goggles -->
+    <path android:pathData="M40,132 Q42,126 52,128 Q54,138 46,140 Q38,140 40,132 Z" android:fillColor="#f5c842" android:strokeColor="#c8a010" android:strokeWidth="1.5"/>
+    <path android:pathData="M58,132 Q60,126 70,128 Q72,138 64,140 Q56,140 58,132 Z" android:fillColor="#f5c842" android:strokeColor="#c8a010" android:strokeWidth="1.5"/>
+    <path android:pathData="M52,133 L58,133" android:strokeColor="#c8a010" android:strokeWidth="2" android:fillColor="#00000000"/>
+    <!-- Ears -->
+    <path android:pathData="M42,116 Q38,98 43,88 Q48,78 52,90 Q54,100 50,116 Z" android:fillColor="#e8b4d0"/>
+    <path android:pathData="M44,114 Q42,100 45,92 Q48,85 50,95 Q51,103 49,114 Z" android:fillColor="#f0c8e0"/>
+    <path android:pathData="M62,116 Q64,98 62,88 Q60,78 56,90 Q54,100 57,116 Z" android:fillColor="#e8b4d0"/>
+    <path android:pathData="M61,114 Q62,100 61,92 Q60,85 57,95 Q56,103 58,114 Z" android:fillColor="#f0c8e0"/>
+
+    <!-- Snowflakes scattered -->
+    <path android:pathData="M140,75 L141,73 L142,75 L144,74 L143,76 L145,77 L143,77 L142,79 L141,77 L139,78 L140,76 L138,75 Z" android:fillColor="#ffffff" android:fillAlpha="0.8"/>
+    <path android:pathData="M200,50 L201,48 L202,50 L204,49 L203,51 L205,52 L203,52 L202,54 L201,52 L199,53 L200,51 L198,50 Z" android:fillColor="#ffffff" android:fillAlpha="0.8"/>
+    <path android:pathData="M45,90 L46,88 L47,90 L49,89 L48,91 L50,92 L48,92 L47,94 L46,92 L44,93 L45,91 L43,90 Z" android:fillColor="#ffffff" android:fillAlpha="0.7"/>
+    <path android:pathData="M310,80 L311,78 L312,80 L314,79 L313,81 L315,82 L313,82 L312,84 L311,82 L309,83 L310,81 L308,80 Z" android:fillColor="#ffffff" android:fillAlpha="0.7"/>
+    <path android:pathData="M160,30 L161,28 L162,30 L164,29 L163,31 L165,32 L163,32 L162,34 L161,32 L159,33 L160,31 L158,30 Z" android:fillColor="#ffffff" android:fillAlpha="0.6"/>
+
+    <!-- Trees (small, in front) -->
+    <path android:pathData="M120,195 L130,195 L125,175 Z" android:fillColor="#2d5a1b"/>
+    <path android:pathData="M122,185 L128,185 L125,168 Z" android:fillColor="#3a7025"/>
+    <path android:pathData="M124,178 L126,178 L125,168 Z" android:fillColor="#2d5a1b"/>
+    <path android:pathData="M125,195 L126,195 L126,200 L124,200 Z" android:fillColor="#5a3010"/>
+
+    <path android:pathData="M340,192 L350,192 L345,172 Z" android:fillColor="#2d5a1b"/>
+    <path android:pathData="M342,182 L348,182 L345,165 Z" android:fillColor="#3a7025"/>
+    <path android:pathData="M345,192 L346,192 L346,197 L344,197 Z" android:fillColor="#5a3010"/>
+
+</vector>
